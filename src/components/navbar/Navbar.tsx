@@ -13,9 +13,9 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`overlay-menu duration-700 ${open ? "active" : ""}`}
+        className={`overlay-menu duration-500 ${open ? "active" : ""}`}
       ></div>
-      <nav className="flex p-10 justify-between sticky top-0 ">
+      <nav className="nav-container flex p-10 justify-between sticky top-0 ">
         <span className="pl-7">
           <p className="text-5xl font-[Poppins] cursor-pointer">ATM.</p>
         </span>
@@ -49,7 +49,7 @@ export default function Navbar() {
         </ul>
 
         <div
-          className={`hamburger ${open ? "active" : ""}`}
+          className={`hamburger ${open ? "active fixed right-10" : ""}`}
           onClick={handleHamburger}
         >
           <span className="bar bg-slate-700"></span>

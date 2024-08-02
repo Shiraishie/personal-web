@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <>
       <motion.div ref={element}>
-        <div className="proj-container md:mr-10">
+        <div className="proj-container md:mr-10 w-screen">
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 100 }}
@@ -48,7 +48,7 @@ export default function Projects() {
             transition={{ duration: 1 }}
           >
             <div className="proj-item flex flex-col justify-center items-center md:flex-row md:pl-32 md:pr-32 border-b mb-5 pb-5 gap-x-5">
-              <div className="md:w-full">
+              <div className="w-screen md:w-full">
                 <h1 className="md:mb-6 pl-3 pr-3">
                   RoamGram: An all-in-One Travel Website
                 </h1>
@@ -62,7 +62,8 @@ export default function Projects() {
               </h3>
             </div>
           </motion.div>
-          <motion.div
+        </div>
+        {/* <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 200 }}
             // animate={{ y: 0, opacity: 1 }}
@@ -104,7 +105,7 @@ export default function Projects() {
               </h3>
             </div>
           </motion.div>
-        </div>
+        </div> */}
       </motion.div>
     </>
   );
