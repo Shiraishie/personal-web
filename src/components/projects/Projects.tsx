@@ -62,8 +62,8 @@ export default function Projects() {
               </h3>
             </div>
           </motion.div>
-        </div>
-        {/* <motion.div
+
+          <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 200 }}
             // animate={{ y: 0, opacity: 1 }}
@@ -105,7 +105,7 @@ export default function Projects() {
               </h3>
             </div>
           </motion.div>
-        </div> */}
+        </div>
       </motion.div>
     </>
   );
