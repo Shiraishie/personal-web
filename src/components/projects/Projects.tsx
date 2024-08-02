@@ -1,5 +1,5 @@
 import { motion, useScroll } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const RoamGram = `During the summer of 2024, a friend and I completed the CP2106 (Orbital) module by developing a full-stack travel website. You can access the deployment version on my GitHub repository: roamgram-deploy.
 The site includes a travel-plan creator with CRUD functions, an expenditure tracker, a detailed reviews page with a rich-text editor and image upload, location routing using Google's API, and a calendar with full CRUD functionalities, featuring draggable and resizable events. 
