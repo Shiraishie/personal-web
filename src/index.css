@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Jost';
+    word-spacing: 1.2px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+
+
+p{
+    font-size:20px;
+    word-spacing: 0px;
+}
+
+li{
+    font-size:23px;
+    word-spacing: 0px;
+}
+
+h3{
+
+    font-size: 17px;
+}
