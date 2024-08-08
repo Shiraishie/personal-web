@@ -100,7 +100,7 @@ export default function Projects() {
                   Data Viz for Brazil's Deforestation
                 </h1>
                 <img
-                  className="rounded-xl w-10/12 md:ml-52"
+                  className="rounded-xl w-10/12 md:ml-36"
                   src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjd3dzRucjRnZ3JpNXh5bDlna3l1bmMyc3czYWxoaTJhbGVtOWg0bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tQiRp46qmxyaGFV9BM/giphy.gif"
                 />
               </div>
