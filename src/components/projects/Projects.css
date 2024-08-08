@@ -1,0 +1,13 @@
+
+@media(max-width:768px) {
+
+    .proj-item h1{
+        font-size: 23px;
+    }
+    .proj-item h3{
+        font-size: 15px;
+    }
+    .proj-item img{
+        width: 350px;
+    }
+}

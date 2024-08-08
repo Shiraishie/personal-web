@@ -8,6 +8,10 @@
     word-spacing: 1.2px;
 }
 
+/* body{
+    overflow-x: hidden;
+} */
+
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -28,5 +32,5 @@ li{
 
 h3{
 
-    font-size: 17px;
+    font-size: 19px;
 }

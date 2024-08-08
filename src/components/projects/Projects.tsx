@@ -1,5 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import "./Projects.css";
 
 const RoamGram = `During the summer of 2024, a friend and I completed the CP2106 (Orbital) module by developing a full-stack travel website. You can access the deployment version on my GitHub repository: roamgram-deploy.
 The site includes a travel-plan creator with CRUD functions, an expenditure tracker, a detailed reviews page with a rich-text editor and image upload, location routing using Google's API, and a calendar with full CRUD functionalities, featuring draggable and resizable events. 
@@ -39,7 +40,7 @@ export default function Projects() {
   return (
     <>
       <motion.div ref={element}>
-        <div className="proj-container md:mr-10 w-screen">
+        <div className="proj-container md:mr-10 w-screen md:pl-36 md:pt-14">
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 100 }}
@@ -47,22 +48,23 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="proj-item flex flex-col justify-center items-center md:flex-row md:pl-32 md:pr-32 border-b mb-5 pb-5 gap-x-5">
+            <div className="proj-item flex flex-col justify-center items-center md:border-b md:pb-5 md: mb-5 md:flex-row md:w-11/12 md:gap-x-20">
               <div className="w-screen md:w-full">
-                <h1 className="md:mb-6 pl-3 pr-3">
-                  RoamGram: An all-in-One Travel Website
+                <h1 className="md:mb-6 pl-3 pr-3 md:pl-10">
+                  RoamGram: An All-in-One Travel Website
                 </h1>
-                <img
-                  className="rounded-xl"
-                  src="https://i.imgur.com/7qZgP2k.gif"
-                />
+                <div className="flex justify-center items-center">
+                  <img
+                    className="rounded-xl w-11/12 "
+                    src="https://i.imgur.com/7qZgP2k.gif"
+                  />
+                </div>
               </div>
               <h3 className="ml-5 mr-4 mt-5 md:-ml-10 whitespace-pre-wrap">
                 {RoamGram}
               </h3>
             </div>
           </motion.div>
-
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 200 }}
@@ -70,15 +72,17 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="proj-item flex flex-col justify-center items-center md:flex-col md:pl-32 md:pr-32 md:border-b mb-5 pb-5">
+            <div className="proj-item flex flex-col justify-center items-center md:flex-col  md:pr-0 md:border-b mb-5 pb-5">
               <h1 className="pl-3 pr-3">
                 Alzheimers Detection with Machine Learning
               </h1>
-              <img
-                className="rounded-xl"
-                src="https://i.imgur.com/fPRC16S.png"
-              />
-              <h3 className="ml-5 mr-4 mt-5 md:ml-14 whitespace-pre-wrap">
+              <div className="flex justify-center items-center md:mt-5">
+                <img
+                  className="rounded-xl w-10/12"
+                  src="https://i.imgur.com/fPRC16S.png"
+                />
+              </div>
+              <h3 className="ml-5 mr-4 mt-5 md:ml-14 md:mr-60 whitespace-pre-wrap">
                 {Alzheimers}
               </h3>
             </div>
@@ -90,17 +94,17 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="proj-item flex flex-col justify-center items-center md:flex-row-reverse md:pl-32 md:pr-32">
+            <div className="proj-item flex flex-col justify-center items-center md:pb-5 md: mb-5 md:flex-row md:w-11/12 md:gap-x-20">
               <div className="md:w-9/12">
-                <h1 className="pl-3 pr-3">
+                <h1 className="md:mb-6 pl-3 pr-3 md:pl-10">
                   Data Viz for Brazil's Deforestation
                 </h1>
                 <img
-                  className="rounded-xl w-10/12"
+                  className="rounded-xl w-10/12 md:ml-52"
                   src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjd3dzRucjRnZ3JpNXh5bDlna3l1bmMyc3czYWxoaTJhbGVtOWg0bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tQiRp46qmxyaGFV9BM/giphy.gif"
                 />
               </div>
-              <h3 className="ml-5 mr-4 mt-5 whitespace-pre-wrap md:pl-10 md:text-right">
+              <h3 className="ml-5 mr-4 mt-5 whitespace-pre-wrap md:pl-10 md:text-left">
                 {DSA2101}
               </h3>
             </div>

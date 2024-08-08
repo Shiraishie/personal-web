@@ -16,7 +16,7 @@ export default function Contact() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mr-5"
+            className="mr-1 md:mr-5"
           >
             {icon}
           </motion.div>
@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <div className="contact-box flex justify-center items-center text-black w-full h-96">
+        <div className="contact-box flex justify-center items-center text-black w-full h-80 md:h-96">
           {c.split("").map((i, index) =>
             i == " " ? (
               <span style={{ fontSize: "55px" }}>{"\u00A0"}</span>

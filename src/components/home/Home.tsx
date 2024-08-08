@@ -16,7 +16,7 @@ export default function Home() {
             ></img>
           </div>
           <div className="intro flex-col max-w-lg">
-            <h1 className="">Hi!</h1>
+            <h1>Hi!</h1>
             <p>
               I'm Alexandra, a third-year NUS student pursuing a major in Data
               Science & Analytics with a minor in Bioinformatics. I am
@@ -32,7 +32,7 @@ export default function Home() {
               </p>
               <p>- SQL queries</p>
               <p>
-                - Simple data visualization using Tableau, Matplotlib, and
+                - Simple data visualization using Matplotlib in Python, and
                 Tidyverse in R
               </p>
               <p> - Front-End Dev</p>

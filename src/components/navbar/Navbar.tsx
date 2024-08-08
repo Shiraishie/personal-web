@@ -16,11 +16,14 @@ export default function Navbar() {
         className={`overlay-menu duration-500 ${open ? "active" : ""}`}
       ></div>
       <nav className="nav-container flex p-10 justify-between sticky top-0 ">
-        <span className="pl-7">
+        <span className="nav-text pl-3 md:pl-12">
           <p className="text-5xl font-[Poppins] cursor-pointer">ATM.</p>
         </span>
 
-        <ul className={`flex nav-menu ${open ? "active" : ""}`}>
+        <ul
+          onClick={() => setOpen(false)}
+          className={`flex nav-menu ${open ? "active" : ""}`}
+        >
           <li className="header hover:text-white hover:bg-slate-700 hover:scale-110 hover:rounded-3xl  rounded-3xl p-3 duration-500 ease-in-out">
             <Link to="/">Home</Link>
           </li>
